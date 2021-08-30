@@ -1,21 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
-class LocationKeys(models.Model):
-    id = models.IntegerField(primary_key=True)
-    access_token = models.CharField(max_length=255, blank=True, null=True)
-  
-    class Meta:
-        db_table = 'location_key'
-
-class Location(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.CharField(max_length=255, blank=True, null=True)
-
-    class Meta:
-        db_table = 'locations'
-
 class ReceiptMessages(models.Model):
     id = models.IntegerField(primary_key=True)
     business_id = models.IntegerField()
