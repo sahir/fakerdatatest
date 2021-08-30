@@ -84,7 +84,7 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-        'NAME': os.environ.get('MYSQL_DATABASE', 'punchh_production_test'),
+        'NAME': os.environ.get('MYSQL_DATABASE', 'punchhdb_april'),
         'ENGINE': 'django.db.backends.mysql',
         'USER': os.environ.get('MYSQL_USERNAME', 'root'),
         'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'punchh12'),
